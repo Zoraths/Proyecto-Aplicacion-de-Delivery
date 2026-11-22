@@ -2,9 +2,6 @@ package delivery.estructuras;
 
 import delivery.model.Pedido;
 
-/**
- * Árbol binario de decisión para clasificar dónde debe esperar un pedido antes de encolarlo.
- */
 public class ArbolDecisionPedido {
 
     public enum DestinoEspera {
