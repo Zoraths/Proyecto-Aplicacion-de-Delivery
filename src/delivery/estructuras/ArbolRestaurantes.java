@@ -2,10 +2,6 @@ package delivery.estructuras;
 
 import delivery.model.Restaurante;
 
-/**
- * Árbol Binario de Búsqueda (ABB) ordenado por calificación de restaurante.
- * No usa TreeMap.
- */
 public class ArbolRestaurantes {
 
     private static class Nodo {
@@ -108,7 +104,6 @@ public class ArbolRestaurantes {
         return new ResultadoBusqueda(null, camino.toString(), -1, -1);
     }
 
-    // El peso es el número de nodos sin contar la raíz
     public int peso() {
         int total = contarNodos(raiz);
         return total == 0 ? 0 : total - 1;
@@ -121,7 +116,6 @@ public class ArbolRestaurantes {
         return 1 + contarNodos(actual.izquierdo) + contarNodos(actual.derecho);
     }
 
-    // La altura de una sola raíz es 0
     public int altura() {
         return alturaRec(raiz);
     }
@@ -149,7 +143,6 @@ public class ArbolRestaurantes {
         return contarHojasRec(actual.izquierdo) + contarHojasRec(actual.derecho);
     }
 
-    // El árbol es completo cuando cada nodo tiene cero hijos o dos
     public boolean esCompleto() {
         return esCompletoRec(raiz);
     }
