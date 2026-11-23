@@ -14,6 +14,7 @@ public class CambioEstado {
         this.estructuraIntervino = estructuraIntervino;
         this.detalle = detalle;
     }
+    
 
     public int getPedidoId() {
         return pedidoId;

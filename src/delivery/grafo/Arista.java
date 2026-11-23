@@ -22,4 +22,5 @@ public class Arista {
     public int getMinutos() {
         return minutos;
     }
+    
 }
